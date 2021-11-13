@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -20,8 +21,8 @@ public class Selenium1 {
 
     @BeforeClass
     public void set_up_driver() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver();
         driver.manage().window().maximize();
     }
 
@@ -32,8 +33,6 @@ public class Selenium1 {
 
     @Test
     public void can_go_to_home_page(){
-        // go to home page
-        driver.get("https://the-internet.herokuapp.com/");
 
         // should see title 'Welcome to the-internet'
         String title = driver.findElement(By.tagName("h1")).getText();

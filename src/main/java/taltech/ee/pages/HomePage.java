@@ -10,6 +10,8 @@ public class HomePage extends Page {
     private final By dragAndDropLink = By.linkText("Drag and Drop");
     private final By multipleWindowsLink = By.linkText("Multiple Windows");
     private final By addRemoveElementsLink = By.linkText("Add/Remove Elements");
+    private final By keyPressesLink = By.linkText("Key Presses");
+
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -33,6 +35,11 @@ public class HomePage extends Page {
     public AddRemoveElementsPage goToAddRemoveElementsPage() {
         driver.findElement(addRemoveElementsLink).click();
         return new AddRemoveElementsPage(driver);
+    }
+
+    public KeyPressesPage goToKeyPressesPage() {
+        driver.findElement(keyPressesLink).click();
+        return new KeyPressesPage(driver);
     }
 
     public DragAndDropPage clickDragAndDropLink() {

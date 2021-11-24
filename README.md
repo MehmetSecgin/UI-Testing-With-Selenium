@@ -1,13 +1,3 @@
-## Team Name - Scar Mini_Team09
-
----
-
-## Team Members
-
-Mehmet Ali Seçgin , Fothul Karim Forhan
-
----
-
 # The Endpoints:
 
 ## We have 2 different endpoints:
@@ -40,3 +30,5 @@ Web Application under test: https://the-internet.herokuapp.com/
 
 
 Originally forked from https://gitlab.cs.ttu.ee/german.mumma
+
+
